@@ -3,7 +3,7 @@ export const CATEGORIES = [
     id: 'system-design',
     name: 'System Design',
     color: '#7EE787', // Muted mint
-    description: 'Distributed architectures, scaling primitives, case studies, and trade-offs.'
+    description: 'Distributed architectures, scaling primitives, real-world case studies, and trade-offs.'
   },
   {
     id: 'leetcode',
@@ -19,14 +19,46 @@ export const CATEGORIES = [
   },
   {
     id: 'github-repos',
-    name: 'GitHub Repositories',
+    name: 'Find Good GitHub Repos',
     color: '#79C0FF', // Muted cyan
-    description: 'High-signal open-source repositories, reference implementations, and learning curricula.'
+    description: 'Curated open-source discovery tools, reference codebases, and learning curricula.'
   }
 ];
 
 export const RESOURCES = [
+  // =========================================================================
   // --- SYSTEM DESIGN ---
+  // =========================================================================
+  {
+    id: 'sd-user-1',
+    categoryId: 'system-design',
+    title: 'liquidslr/system-design-notes',
+    description: 'Comprehensive repository covering system design concepts, patterns, scalability, and interview preparation.',
+    url: 'https://github.com/liquidslr/system-design-notes',
+    source: 'github.com',
+    type: 'Repository',
+    tag: 'Notes'
+  },
+  {
+    id: 'sd-user-2',
+    categoryId: 'system-design',
+    title: 'xevrion/breakscale',
+    description: 'Deep dive into system bottlenecks, reliability engineering, and what happens when architectures scale.',
+    url: 'https://github.com/xevrion/breakscale',
+    source: 'github.com',
+    type: 'Repository',
+    tag: 'Scaling'
+  },
+  {
+    id: 'sd-user-8',
+    categoryId: 'system-design',
+    title: 'subhashchy/The-Accidental-CTO',
+    description: 'Pragmatic engineering playbook covering architectural trade-offs, tech stacks, and scaling real startups.',
+    url: 'https://github.com/subhashchy/The-Accidental-CTO',
+    source: 'github.com',
+    type: 'Repository',
+    tag: 'Architecture'
+  },
   {
     id: 'sd-1',
     categoryId: 'system-design',
@@ -56,6 +88,126 @@ export const RESOURCES = [
     source: 'bytebytego.com',
     type: 'Articles',
     tag: 'Deep-dive'
+  },
+  {
+    id: 'sd-art-9',
+    categoryId: 'system-design',
+    title: "Figma: How Figma's multiplayer technology works",
+    description: 'Deep dive into distributed real-time state synchronization, operational transformations, and WebSocket server architecture.',
+    url: 'https://lnkd.in/gX2gN72y',
+    source: 'figma.com',
+    type: 'Article',
+    tag: 'Sync / CRDT'
+  },
+  {
+    id: 'sd-art-12',
+    categoryId: 'system-design',
+    title: 'Linear: Scaling the Linear sync engine',
+    description: 'Architecture of local-first sync, client-side SQLite/IndexedDB state caching, and conflict resolution at scale.',
+    url: 'https://lnkd.in/gj2dpJRE',
+    source: 'linear.app',
+    type: 'Article',
+    tag: 'Sync Engine'
+  },
+  {
+    id: 'sd-art-1',
+    categoryId: 'system-design',
+    title: 'Facebook: Rebuilding our tech stack for the new Facebook.com',
+    description: 'Complete architecture rewrite focused on Relay, GraphQL code splitting, resource prefetching, and render performance.',
+    url: 'https://lnkd.in/g6xi78nB',
+    source: 'engineering.fb.com',
+    type: 'Article',
+    tag: 'Case Study'
+  },
+  {
+    id: 'sd-art-2',
+    categoryId: 'system-design',
+    title: 'Twitter: How we built Twitter Lite',
+    description: 'Progressive web app architecture optimizing data usage, bundle size, and service worker caching for 3G networks.',
+    url: 'https://lnkd.in/gf2Bg856',
+    source: 'blog.twitter.com',
+    type: 'Article',
+    tag: 'Case Study'
+  },
+  {
+    id: 'sd-art-3',
+    categoryId: 'system-design',
+    title: 'Instagram: Making Instagram faster',
+    description: 'Strategies for reducing app cold start, feed prefetching pipelines, and optimizing end-to-end network latency.',
+    url: 'https://lnkd.in/gpVuyN4Q',
+    source: 'instagram.com',
+    type: 'Article',
+    tag: 'Performance'
+  },
+  {
+    id: 'sd-art-4',
+    categoryId: 'system-design',
+    title: "Airbnb: Rearchitecting Airbnb's frontend",
+    description: 'Migrating from a legacy monolith to server-driven UI, page-level hydration, and service-oriented web architecture.',
+    url: 'https://lnkd.in/g_UcEeey',
+    source: 'medium.com',
+    type: 'Article',
+    tag: 'Case Study'
+  },
+  {
+    id: 'sd-art-5',
+    categoryId: 'system-design',
+    title: 'Pinterest: A Progressive Web App Performance Case Study',
+    description: 'How architectural performance investments increased user engagement and reduced mobile load times by 40%.',
+    url: 'https://lnkd.in/gdXE7DcY',
+    source: 'medium.com',
+    type: 'Article',
+    tag: 'Case Study'
+  },
+  {
+    id: 'sd-art-6',
+    categoryId: 'system-design',
+    title: 'YouTube: Building a better web: A faster YouTube',
+    description: 'Modularizing YouTube web video player pipelines, Web Component architectures, and streaming optimization.',
+    url: 'https://lnkd.in/gREH6nPj',
+    source: 'youtube.com',
+    type: 'Article',
+    tag: 'Case Study'
+  },
+  {
+    id: 'sd-art-7',
+    categoryId: 'system-design',
+    title: 'Netflix: Modernizing the Web Playback UI',
+    description: 'Eliminating React from client playback UI to maximize memory efficiency and startup speed on constrained hardware.',
+    url: 'https://lnkd.in/gR_B8tHA',
+    source: 'netflixtechblog.com',
+    type: 'Article',
+    tag: 'Case Study'
+  },
+  {
+    id: 'sd-art-8',
+    categoryId: 'system-design',
+    title: 'Spotify: Building the future of our desktop apps',
+    description: 'Architecting a high-performance desktop framework across Electron and Chromium embedded frameworks.',
+    url: 'https://lnkd.in/gs2Ew_9x',
+    source: 'spotify.com',
+    type: 'Article',
+    tag: 'Architecture'
+  },
+  {
+    id: 'sd-art-11',
+    categoryId: 'system-design',
+    title: 'Google Photos: Building the Google Photos Web UI',
+    description: 'Virtual scrolling 100,000+ photo grids with 60 FPS, WebGL canvas shaders, and progressive image decoding.',
+    url: 'https://lnkd.in/g58YvKB5',
+    source: 'medium.com',
+    type: 'Article',
+    tag: 'Case Study'
+  },
+  {
+    id: 'sd-art-15',
+    categoryId: 'system-design',
+    title: 'Atlassian: Rendering like Butter – a Confluence Whiteboards Story',
+    description: 'Canvas rendering pipeline, spatial indexing, and hardware acceleration for infinite whiteboards collaboration.',
+    url: 'https://lnkd.in/g4Q5Ju7d',
+    source: 'atlassian.com',
+    type: 'Article',
+    tag: 'Case Study'
   },
   {
     id: 'sd-4',
@@ -98,7 +250,29 @@ export const RESOURCES = [
     tag: 'Networking'
   },
 
-  // --- LEETCODE & PATTERNS ---
+  // =========================================================================
+  // --- LEETCODE PROBLEMS & PATTERNS ---
+  // =========================================================================
+  {
+    id: 'lc-user-learnalgo',
+    categoryId: 'leetcode',
+    title: 'Learn Algo',
+    description: 'Interactive visual playground to step through, explore, and master foundational algorithms and data structures.',
+    url: 'https://learn-algo-gold.vercel.app/',
+    source: 'learn-algo-gold.vercel.app',
+    type: 'Interactive',
+    tag: 'Visualizer'
+  },
+  {
+    id: 'lc-user-3',
+    categoryId: 'leetcode',
+    title: 'GrindMap (Interactive LeetCode Roadmap)',
+    description: 'Interactive visual roadmap for mastering DSA problems, topic dependencies, and technical interview patterns.',
+    url: 'https://grindmap.xevrion.dev/',
+    source: 'grindmap.xevrion.dev',
+    type: 'Tool',
+    tag: 'Roadmap'
+  },
   {
     id: 'lc-1',
     categoryId: 'leetcode',
@@ -118,46 +292,6 @@ export const RESOURCES = [
     source: 'neetcode.io',
     type: 'Roadmap',
     tag: 'Core'
-  },
-  {
-    id: 'lc-3',
-    categoryId: 'leetcode',
-    title: 'LC #146: LRU Cache',
-    description: 'Hash map paired with a doubly-linked list for O(1) average lookup and eviction mechanics.',
-    url: 'https://leetcode.com/problems/lru-cache/',
-    source: 'leetcode.com',
-    type: 'Problem',
-    tag: 'LC #146'
-  },
-  {
-    id: 'lc-4',
-    categoryId: 'leetcode',
-    title: 'LC #200: Number of Islands',
-    description: 'Archetypal 2D grid matrix traversal using iterative BFS with queue or recursive DFS component coloring.',
-    url: 'https://leetcode.com/problems/number-of-islands/',
-    source: 'leetcode.com',
-    type: 'Problem',
-    tag: 'LC #200'
-  },
-  {
-    id: 'lc-5',
-    categoryId: 'leetcode',
-    title: 'LC #42: Trapping Rain Water',
-    description: 'Two-pointer bounded minimum elevation technique and monotonic decreasing stack formulation.',
-    url: 'https://leetcode.com/problems/trapping-rain-water/',
-    source: 'leetcode.com',
-    type: 'Problem',
-    tag: 'LC #42'
-  },
-  {
-    id: 'lc-6',
-    categoryId: 'leetcode',
-    title: 'LC #23: Merge k Sorted Lists',
-    description: 'Min-heap priority queue k-way merge vs divide-and-conquer pairwise merge comparisons.',
-    url: 'https://leetcode.com/problems/merge-k-sorted-lists/',
-    source: 'leetcode.com',
-    type: 'Problem',
-    tag: 'LC #23'
   },
   {
     id: 'lc-7',
@@ -180,7 +314,69 @@ export const RESOURCES = [
     tag: 'Visualizer'
   },
 
+  // =========================================================================
   // --- BACKEND CONCEPTS & INTERNALS ---
+  // =========================================================================
+  {
+    id: 'be-user-6',
+    categoryId: 'backend',
+    title: 'Backend Developer Roadmap (roadmap.sh)',
+    description: 'Community-standard interactive roadmap of technologies, networking protocols, databases, and APIs.',
+    url: 'https://roadmap.sh/backend',
+    source: 'roadmap.sh',
+    type: 'Roadmap',
+    tag: 'Roadmap'
+  },
+  {
+    id: 'be-user-7',
+    categoryId: 'backend',
+    title: 'Backend from First Principles',
+    description: 'Foundational guide deconstructing backend systems from network sockets and concurrency models to databases.',
+    url: 'https://backend-from-first-principle.vercel.app/',
+    source: 'vercel.app',
+    type: 'Guide',
+    tag: 'First Principles'
+  },
+  {
+    id: 'be-user-9',
+    categoryId: 'backend',
+    title: 'harshit3011/Technical-Engineering-Articles',
+    description: 'Curated collection of high-signal engineering and distributed systems blogs from top technology companies.',
+    url: 'https://github.com/harshit3011/Technical-Engineering-Articles',
+    source: 'github.com',
+    type: 'Repository',
+    tag: 'Articles'
+  },
+  {
+    id: 'be-art-10',
+    categoryId: 'backend',
+    title: "Notion: The data model behind Notion's flexibility",
+    description: 'Deep dive into Notion database architecture, blocks hierarchy, recursive data trees, and state synchronization.',
+    url: 'https://lnkd.in/gMT5ZqUA',
+    source: 'notion.so',
+    type: 'Article',
+    tag: 'Data Model'
+  },
+  {
+    id: 'be-art-13',
+    categoryId: 'backend',
+    title: 'Shopify: How we built Hydrogen: A React framework for storefronts',
+    description: 'Streaming SSR, edge runtime caching architectures, and building specialized eCommerce data-fetching engines.',
+    url: 'https://lnkd.in/g9xwMEBF',
+    source: 'shopify.engineering',
+    type: 'Article',
+    tag: 'Architecture'
+  },
+  {
+    id: 'be-art-14',
+    categoryId: 'backend',
+    title: 'Medium: How the Medium editor works',
+    description: 'DOM state management, contentEditable mechanics, tree diffing, and cross-platform document rendering.',
+    url: 'https://lnkd.in/gnYRQxVY',
+    source: 'medium.engineering',
+    type: 'Article',
+    tag: 'Internals'
+  },
   {
     id: 'be-1',
     categoryId: 'backend',
@@ -262,75 +458,27 @@ export const RESOURCES = [
     tag: 'Caching'
   },
 
-  // --- GITHUB REPOSITORIES ---
+  // =========================================================================
+  // --- FIND GOOD GITHUB REPOS ---
+  // =========================================================================
   {
-    id: 'gh-1',
+    id: 'gh-user-4',
     categoryId: 'github-repos',
-    title: 'kamranahmedse/developer-roadmap',
-    description: 'Interactive visual roadmaps, study guides, and milestone pathways for backend, DevOps, and cloud systems.',
-    url: 'https://github.com/kamranahmedse/developer-roadmap',
-    source: 'github.com',
-    type: 'Repository',
-    tag: '★ 310k'
+    title: 'OpenSox (opensox.ai)',
+    description: 'AI-powered open source repository discovery engine and intelligent GitHub codebase search.',
+    url: 'https://opensox.ai/',
+    source: 'opensox.ai',
+    type: 'Tool',
+    tag: 'Discovery'
   },
   {
-    id: 'gh-2',
+    id: 'gh-user-5',
     categoryId: 'github-repos',
-    title: 'kelseyhightower/kubernetes-the-hard-way',
-    description: 'Bootstrap a production Kubernetes cluster on bare compute from scratch without automated installers.',
-    url: 'https://github.com/kelseyhightower/kubernetes-the-hard-way',
-    source: 'github.com',
-    type: 'Repository',
-    tag: '★ 39k'
-  },
-  {
-    id: 'gh-3',
-    categoryId: 'github-repos',
-    title: 'jwasham/coding-interview-university',
-    description: 'Complete computer science study curriculum to transition from self-taught to senior software engineer.',
-    url: 'https://github.com/jwasham/coding-interview-university',
-    source: 'github.com',
-    type: 'Repository',
-    tag: '★ 320k'
-  },
-  {
-    id: 'gh-4',
-    categoryId: 'github-repos',
-    title: 'torvalds/linux',
-    description: 'Linux kernel source tree: the foundational bedrock of modern server infrastructure and cloud OS runtime.',
-    url: 'https://github.com/torvalds/linux',
-    source: 'github.com',
-    type: 'Repository',
-    tag: '★ 185k'
-  },
-  {
-    id: 'gh-5',
-    categoryId: 'github-repos',
-    title: 'redis/redis',
-    description: 'In-memory database that persists on disk; quintessential C codebase benchmark for low-latency network I/O.',
-    url: 'https://github.com/redis/redis',
-    source: 'github.com',
-    type: 'Repository',
-    tag: '★ 68k'
-  },
-  {
-    id: 'gh-6',
-    categoryId: 'github-repos',
-    title: 'prometheus/prometheus',
-    description: 'Cloud native monitoring system and TSDB metrics collector written in Go with PromQL query engine.',
-    url: 'https://github.com/prometheus/prometheus',
-    source: 'github.com',
-    type: 'Repository',
-    tag: '★ 56k'
-  },
-  {
-    id: 'gh-7',
-    categoryId: 'github-repos',
-    title: 'minio/minio',
-    description: 'High-performance, S3-compatible enterprise object storage server architected for high-density disks.',
-    url: 'https://github.com/minio/minio',
-    source: 'github.com',
-    type: 'Repository',
-    tag: '★ 51k'
+    title: 'Ossium (ossium.in)',
+    description: 'Curated platform to discover high-signal, active, and trending open-source GitHub projects.',
+    url: 'https://ossium.in/',
+    source: 'ossium.in',
+    type: 'Tool',
+    tag: 'Trending OSS'
   }
 ];
