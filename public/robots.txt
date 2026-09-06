@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rudra2637.github.io/One-Place/sitemap.xml

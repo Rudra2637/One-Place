@@ -28,15 +28,17 @@ export function ResourceRow({
       {/* Main Content: Title + Description */}
       <div className="flex-1 min-w-0 pr-2">
         <div className="flex flex-wrap items-center gap-2 mb-1">
-          <a
-            href={resource.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-sm font-medium text-[var(--text-primary)] hover:text-[var(--accent-link)] transition-colors inline-flex items-center gap-1.5"
-          >
-            <span>{resource.title}</span>
-            <ExternalLink className="w-3 h-3 text-[var(--text-muted)] opacity-50 group-hover:opacity-100 transition-opacity" />
-          </a>
+          <h3 className="m-0 text-sm font-medium">
+            <a
+              href={resource.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[var(--text-primary)] hover:text-[var(--accent-link)] transition-colors inline-flex items-center gap-1.5"
+            >
+              <span>{resource.title}</span>
+              <ExternalLink className="w-3 h-3 text-[var(--text-muted)] opacity-50 group-hover:opacity-100 transition-opacity" />
+            </a>
+          </h3>
 
           {/* Technical source host badge in monospace */}
           <span className="font-mono text-[11px] text-[var(--text-muted)] bg-[var(--bg-surface)] border border-[var(--border-subtle)] px-1.5 py-0.5 rounded">

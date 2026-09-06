@@ -19,9 +19,9 @@ export function Header({
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
         <div className="flex items-center gap-4">
           <div className="flex items-baseline gap-2.5">
-            <span className="text-lg font-semibold tracking-tight text-[var(--text-primary)]">
+            <h1 className="text-lg font-semibold tracking-tight text-[var(--text-primary)] m-0">
               Oneplace
-            </span>
+            </h1>
             <span className="text-xs text-[var(--text-muted)] font-mono border border-[var(--border-subtle)] rounded px-1.5 py-0.5">
               v1.0
             </span>
