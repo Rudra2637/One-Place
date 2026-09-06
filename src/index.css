@@ -1,13 +1,65 @@
 @import "tailwindcss";
 
 :root {
-  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
   color-scheme: dark;
+  --bg-canvas: #0d1117;
+  --bg-surface: #161b22;
+  --bg-subtle: #21262d;
+  --bg-input: #161b22;
+  --border-subtle: #30363d;
+  --border-hairline: #21262d;
+  --text-primary: #e6edf3;
+  --text-muted: #8b949e;
+  --accent-link: #58a6ff;
+  --row-hover: #161b22;
+  --scrollbar-track: #0d1117;
+  --scrollbar-thumb: #21262d;
+  --scrollbar-thumb-hover: #30363d;
+}
+
+[data-theme="light"] {
+  color-scheme: light;
+  --bg-canvas: #ffffff;
+  --bg-surface: #f6f8fa;
+  --bg-subtle: #eaeef2;
+  --bg-input: #ffffff;
+  --border-subtle: #d0d7de;
+  --border-hairline: #e1e4e8;
+  --text-primary: #1f2328;
+  --text-muted: #656d76;
+  --accent-link: #0969da;
+  --row-hover: #f6f8fa;
+  --scrollbar-track: #ffffff;
+  --scrollbar-thumb: #d0d7de;
+  --scrollbar-thumb-hover: #afb8c1;
 }
 
 body {
   margin: 0;
   min-height: 100vh;
-  background-color: #0b0f19;
-  color: #f1f5f9;
+  background-color: var(--bg-canvas);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Custom scrollbar for developer console */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-hover);
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 }
