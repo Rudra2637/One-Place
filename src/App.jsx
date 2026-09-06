@@ -4,6 +4,7 @@ import { Header } from './components/Header'
 import { CategoryNav } from './components/CategoryNav'
 import { ResourceSection } from './components/ResourceSection'
 import { ExternalLink, Terminal } from 'lucide-react'
+import { Analytics } from '@vercel/analytics/react'
 
 const GITHUB_ISSUE_URL = 'https://github.com/Rudra2637/One-Place/issues/new?title=%5BResource+Suggestion%5D&body=Describe+the+tool+or+resource+you+would+like+to+add+with+its+link+and+category.'
 
@@ -283,6 +284,9 @@ function App() {
           </div>
         </div>
       </footer>
+
+      {/* Vercel Web Analytics */}
+      <Analytics />
     </div>
   )
 }
