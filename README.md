@@ -24,6 +24,9 @@ The resources are organized into 4 distinct, dedicated zones:
 4. **Find Good GitHub Repos**:
    - High-signal platforms to discover active and trending open-source projects (*OpenSox*, *Ossium*).
 
+5. **Random Links**:
+   - Cool web experiments, developer tools, design utilities, and internet finds (*Fuck My Resume*, *GeoGuessr*, *Abeto Messenger*, *CodingPets*, *Cosmos*, *Quenq*, *Design Engineer Tools*).
+
 ---
 
 ## Features
