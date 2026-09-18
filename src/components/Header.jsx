@@ -1,4 +1,4 @@
-import { Search, PlusCircle, Bookmark, ExternalLink, Sun, Moon } from 'lucide-react'
+import { Search, PlusCircle, Bookmark, ExternalLink, Sun, Moon, Star } from 'lucide-react'
 
 const GITHUB_ISSUE_URL = 'https://github.com/Rudra2637/One-Place/issues/new?title=%5BResource+Suggestion%5D&body=Describe+the+tool+or+resource+you+would+like+to+add+with+its+link+and+category.'
 
@@ -96,6 +96,19 @@ export function Header({
               </span>
             )}
           </button>
+
+          {/* Star the Repo */}
+          <a
+            href="https://github.com/Rudra2637/One-Place"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-md text-xs font-medium bg-[var(--bg-surface)] border border-[var(--border-subtle)] text-[var(--text-primary)] hover:border-[#f2cc60] hover:text-[#f2cc60] transition-colors"
+            title="Star Rudra2637/One-Place on GitHub"
+          >
+            <Star className="w-3.5 h-3.5 fill-[#f2cc60] text-[#f2cc60]" />
+            <span className="hidden sm:inline">Star on GitHub</span>
+            <span className="sm:hidden">Star</span>
+          </a>
 
           {/* Direct link to open GitHub Issue */}
           <a

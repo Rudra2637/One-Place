@@ -580,5 +580,15 @@ export const RESOURCES = [
     source: 'designengineer.tools',
     type: 'Directory',
     tag: 'Design Tools'
+  },
+  {
+    id: 'rnd-8',
+    categoryId: 'random',
+    title: 'ihatepdf.cv',
+    description: 'Free client-side PDF editor with 60+ tools (merge, split, compress, OCR) with zero uploads, no watermarks, and no sign-up.',
+    url: 'https://www.ihatepdf.cv/',
+    source: 'ihatepdf.cv',
+    type: 'Tool',
+    tag: 'PDF Tools'
   }
 ];
