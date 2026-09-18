@@ -22,6 +22,12 @@ export const CATEGORIES = [
     name: 'Find Good GitHub Repos',
     color: '#79C0FF', // Muted cyan
     description: 'Curated open-source discovery tools, reference codebases, and learning curricula.'
+  },
+  {
+    id: 'random',
+    name: 'Random Links',
+    color: '#FF7B72', // Muted coral
+    description: 'Cool web experiments, creative tools, internet artifacts, and fun developer finds.'
   }
 ];
 
@@ -29,6 +35,26 @@ export const RESOURCES = [
   // =========================================================================
   // --- SYSTEM DESIGN ---
   // =========================================================================
+  {
+    id: 'sd-user-vogels',
+    categoryId: 'system-design',
+    title: 'All Things Distributed (Werner Vogels)',
+    description: 'Amazon CTO Werner Vogels on distributed systems, modern cloud architecture, asynchronous messaging, and scale.',
+    url: 'https://allthingsdistributed.com/',
+    source: 'allthingsdistributed.com',
+    type: 'Articles',
+    tag: 'Distributed Systems'
+  },
+  {
+    id: 'sd-user-sdwebsite',
+    categoryId: 'system-design',
+    title: 'SystemDesign.website',
+    description: 'Interactive platform for mastering high-level distributed system design with visual simulators and architectural deep-dives.',
+    url: 'https://systemdesign.website/',
+    source: 'systemdesign.website',
+    type: 'Interactive',
+    tag: 'System Design'
+  },
   {
     id: 'sd-user-1',
     categoryId: 'system-design',
@@ -480,5 +506,79 @@ export const RESOURCES = [
     source: 'ossium.in',
     type: 'Tool',
     tag: 'Trending OSS'
+  },
+
+  // =========================================================================
+  // --- RANDOM LINKS ---
+  // =========================================================================
+  {
+    id: 'rnd-1',
+    categoryId: 'random',
+    title: 'Fuck My Resume',
+    description: 'AI resume tailoring, ATS optimization, cold outreach drafts, and scored mock interviews.',
+    url: 'https://fuck-my-resume.vercel.app/',
+    source: 'fuck-my-resume.vercel.app',
+    type: 'Tool',
+    tag: 'AI Resume'
+  },
+  {
+    id: 'rnd-2',
+    categoryId: 'random',
+    title: 'GeoGuessr',
+    description: 'Geography discovery game exploring Google Street View panoramic locations to guess where you are in the world.',
+    url: 'https://www.geoguessr.com/',
+    source: 'geoguessr.com',
+    type: 'Game',
+    tag: 'Geography'
+  },
+  {
+    id: 'rnd-3',
+    categoryId: 'random',
+    title: 'Abeto Messenger',
+    description: 'Minimalist retro-inspired chat messenger experiment and real-time communication interface.',
+    url: 'https://messenger.abeto.co/',
+    source: 'messenger.abeto.co',
+    type: 'Experiment',
+    tag: 'Messenger'
+  },
+  {
+    id: 'rnd-4',
+    categoryId: 'random',
+    title: 'CodingPets',
+    description: 'Virtual developer pet companions that react, grow, and keep you company on your desktop while coding.',
+    url: 'https://codingpets.com/',
+    source: 'codingpets.com',
+    type: 'Tool',
+    tag: 'Productivity'
+  },
+  {
+    id: 'rnd-5',
+    categoryId: 'random',
+    title: 'Cosmos (Explore)',
+    description: 'A curated visual discovery engine and Pinterest alternative built for designers, artists, and creatives.',
+    url: 'https://www.cosmos.so/explore',
+    source: 'cosmos.so',
+    type: 'Inspiration',
+    tag: 'Design'
+  },
+  {
+    id: 'rnd-6',
+    categoryId: 'random',
+    title: 'Quenq',
+    description: 'Interactive museum of internet culture featuring classic retro games, preserved software, and digital curiosities.',
+    url: 'https://quenq.com/',
+    source: 'quenq.com',
+    type: 'Interactive',
+    tag: 'Retro'
+  },
+  {
+    id: 'rnd-7',
+    categoryId: 'random',
+    title: 'Design Engineer Tools',
+    description: 'Curated directory of utilities, components, interaction libraries, and craft references for design engineers.',
+    url: 'https://designengineer.tools/',
+    source: 'designengineer.tools',
+    type: 'Directory',
+    tag: 'Design Tools'
   }
 ];
