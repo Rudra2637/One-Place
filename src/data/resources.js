@@ -36,6 +36,26 @@ export const RESOURCES = [
   // --- SYSTEM DESIGN ---
   // =========================================================================
   {
+    id: 'sd-user-hellointerview',
+    categoryId: 'system-design',
+    title: 'Hello Interview',
+    description: 'In-depth system design interview guides, end-to-end architecture breakdowns, and frameworks by ex-FAANG engineers.',
+    url: 'https://www.hellointerview.com/',
+    source: 'hellointerview.com',
+    type: 'Guide',
+    tag: 'Interview Prep'
+  },
+  {
+    id: 'sd-user-algomaster',
+    categoryId: 'system-design',
+    title: 'AlgoMaster',
+    description: 'Visual system design roadmaps, distributed system cheat sheets, and architectural pattern breakdowns.',
+    url: 'https://algomaster.io/',
+    source: 'algomaster.io',
+    type: 'Roadmap',
+    tag: 'System Design'
+  },
+  {
     id: 'sd-user-vogels',
     categoryId: 'system-design',
     title: 'All Things Distributed (Werner Vogels)',
@@ -590,5 +610,15 @@ export const RESOURCES = [
     source: 'ihatepdf.cv',
     type: 'Tool',
     tag: 'PDF Tools'
+  },
+  {
+    id: 'rnd-9',
+    categoryId: 'random',
+    title: 'CalcSolver',
+    description: 'Try typing 0000 in calculator.',
+    url: 'https://calcsolver.net/',
+    source: 'calcsolver.net',
+    type: 'Interactive',
+    tag: 'Calculator'
   }
 ];
