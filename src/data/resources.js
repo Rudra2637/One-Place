@@ -24,6 +24,12 @@ export const CATEGORIES = [
     description: 'Curated open-source discovery tools, reference codebases, and learning curricula.'
   },
   {
+    id: 'design-engineering',
+    name: 'Design Engineering & Anti-Slop',
+    color: '#D2A8FF', // Muted violet
+    description: 'Agent skills, UI guidelines, and craft standards that eliminate generic AI slop.'
+  },
+  {
     id: 'random',
     name: 'Random Links',
     color: '#FF7B72', // Muted coral
@@ -300,6 +306,26 @@ export const RESOURCES = [
   // --- LEETCODE PROBLEMS & PATTERNS ---
   // =========================================================================
   {
+    id: 'lc-user-cses',
+    categoryId: 'leetcode',
+    title: "Competitive Programmer's Handbook (CSES)",
+    description: 'Concise, high-yield guide covering algorithms, data structures, and graph theory by Antti Laaksonen.',
+    url: 'https://cses.fi/book/book.pdf',
+    source: 'cses.fi',
+    type: 'Book',
+    tag: 'DSA Book'
+  },
+  {
+    id: 'lc-user-tih',
+    categoryId: 'leetcode',
+    title: 'Tech Interview Handbook',
+    description: 'Curated technical interview handbook covering algorithms, front-end, behavioral prep, and resume guides.',
+    url: 'https://www.techinterviewhandbook.org/',
+    source: 'techinterviewhandbook.org',
+    type: 'Guide',
+    tag: 'Interview Prep'
+  },
+  {
     id: 'lc-user-learnalgo',
     categoryId: 'leetcode',
     title: 'Learn Algo',
@@ -363,6 +389,16 @@ export const RESOURCES = [
   // =========================================================================
   // --- BACKEND CONCEPTS & INTERNALS ---
   // =========================================================================
+  {
+    id: 'be-user-bootdev',
+    categoryId: 'backend',
+    title: 'Boot.dev',
+    description: 'Gamified platform for learning backend engineering in Go, Python, SQL, Docker, and distributed systems.',
+    url: 'https://www.boot.dev/',
+    source: 'boot.dev',
+    type: 'Course',
+    tag: 'Backend'
+  },
   {
     id: 'be-user-6',
     categoryId: 'backend',
@@ -529,6 +565,70 @@ export const RESOURCES = [
   },
 
   // =========================================================================
+  // --- DESIGN ENGINEERING & ANTI-SLOP ---
+  // =========================================================================
+  {
+    id: 'de-1',
+    categoryId: 'design-engineering',
+    title: 'Anti UI Slop (uizze.com)',
+    description: 'Design rules and curated prompts to prevent AI agents from generating generic, template-looking interfaces.',
+    url: 'https://uizze.com/',
+    source: 'uizze.com',
+    type: 'Tool',
+    tag: 'Anti-Slop'
+  },
+  {
+    id: 'de-2',
+    categoryId: 'design-engineering',
+    title: 'ThinkUI (thinkui.xyz)',
+    description: 'A design system framework and prompt suite crafted for high-taste, production-grade frontend interfaces.',
+    url: 'https://thinkui.xyz/',
+    source: 'thinkui.xyz',
+    type: 'Design System',
+    tag: 'UI Prompts'
+  },
+  {
+    id: 'de-3',
+    categoryId: 'design-engineering',
+    title: 'Taste Skill (Leonxlnx/taste-skill)',
+    description: 'AI agent skill that enforces art direction, bespoke typography, and visual taste for coding assistants.',
+    url: 'https://github.com/Leonxlnx/taste-skill',
+    source: 'github.com',
+    type: 'Agent Skill',
+    tag: 'Agent Skill'
+  },
+  {
+    id: 'de-4',
+    categoryId: 'design-engineering',
+    title: 'Emil Kowalski — Design Engineering Skills',
+    description: 'Agent skills and animation rules for fine-tuned UI polish, easing curves, and micro-interactions.',
+    url: 'https://github.com/emilkowalski/skills',
+    source: 'github.com',
+    type: 'Agent Skill',
+    tag: 'Animation'
+  },
+  {
+    id: 'de-5',
+    categoryId: 'design-engineering',
+    title: 'Vercel Web Design Guidelines & Agent Skills',
+    description: "Vercel's official agent skills and living design guidelines for auditing UI accessibility, UX, and craft.",
+    url: 'https://github.com/vercel-labs/agent-skills',
+    source: 'github.com',
+    type: 'Agent Skill',
+    tag: 'Guidelines'
+  },
+  {
+    id: 'de-6',
+    categoryId: 'design-engineering',
+    title: 'Design Engineer Tools',
+    description: 'Curated directory of utilities, components, interaction libraries, and craft references for design engineers.',
+    url: 'https://designengineer.tools/',
+    source: 'designengineer.tools',
+    type: 'Directory',
+    tag: 'Design Tools'
+  },
+
+  // =========================================================================
   // --- RANDOM LINKS ---
   // =========================================================================
   {
@@ -590,16 +690,6 @@ export const RESOURCES = [
     source: 'quenq.com',
     type: 'Interactive',
     tag: 'Retro'
-  },
-  {
-    id: 'rnd-7',
-    categoryId: 'random',
-    title: 'Design Engineer Tools',
-    description: 'Curated directory of utilities, components, interaction libraries, and craft references for design engineers.',
-    url: 'https://designengineer.tools/',
-    source: 'designengineer.tools',
-    type: 'Directory',
-    tag: 'Design Tools'
   },
   {
     id: 'rnd-8',

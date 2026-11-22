@@ -24,8 +24,11 @@ The resources are organized into 4 distinct, dedicated zones:
 4. **Find Good GitHub Repos**:
    - High-signal platforms to discover active and trending open-source projects (*OpenSox*, *Ossium*).
 
-5. **Random Links**:
-   - Cool web experiments, developer tools, design utilities, and internet finds (*Fuck My Resume*, *GeoGuessr*, *Abeto Messenger*, *CodingPets*, *Cosmos*, *Quenq*, *Design Engineer Tools*).
+5. **Design Engineering & Anti-Slop**:
+   - Agent skills, design frameworks, UI prompts, and craft standards that kill generic AI slop (*Anti UI Slop*, *ThinkUI*, *Taste Skill*, *Emil Kowalski's Design Engineering Skills*, *Vercel Web Design Guidelines*, *Design Engineer Tools*).
+
+6. **Random Links**:
+   - Cool web experiments, developer tools, design utilities, and internet finds (*Fuck My Resume*, *GeoGuessr*, *Abeto Messenger*, *CodingPets*, *Cosmos*, *Quenq*, *CalcSolver*, *ihatepdf.cv*).
 
 ---
 
